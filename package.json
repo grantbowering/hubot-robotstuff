@@ -1,7 +1,7 @@
 {
   "name": "hubot-robotstuff",
-  "description": "Some thoughts on what it is to be a robot.",
-  "version": "0.0.0",
+  "description": "Hubot script. Some thoughts on what it is to be a robot. Responds to questions about what it is, whether it's human, whether it has feelings and what they are.",
+  "version": "0.0.1",
   "author": "grant.bowering@gmail.com",
   "license": "MIT",
 
@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-robotstuff.git"
+    "url": "git://github.com/grantbowering/hubot-robotstuff.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-robotstuff/issues"
+    "url": "https://github.com/grantbowering/hubot-robotstuff/issues"
   },
 
   "dependencies": {

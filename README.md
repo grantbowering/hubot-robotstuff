@@ -1,8 +1,6 @@
 # hubot-robotstuff
 
-Some thoughts on what it is to be a robot.
-
-See [`src/robotstuff.coffee`](src/robotstuff.coffee) for full documentation.
+Hubot script. Some thoughts on what it is to be a robot. Responds to questions about what it is, whether it's human, whether it has feelings and what they are.
 
 ## Installation
 
@@ -21,6 +19,6 @@ Then add **hubot-robotstuff** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot are you human?
+hubot>> http://i.imgur.com/sP1b1rk.jpg
 ```

@@ -1,10 +1,9 @@
 # Description
-#   Some thoughts on what it is to be a robot.
+#  Some thoughts on what it is to be a robot. Responds to questions about what it is, whether it's human, whether it has feelings and what they are.
 #
 #
 # Commands:
 #   I think about robots a lot.
-#   I may have seen you having fun on the internet.
 #   I feel things (or at least my software says I do)
 #   I know who or what I am.
 #
@@ -14,19 +13,19 @@
 Util = require 'util'
 
 feelings = [
-  "I feel metallic. :robot_face:",
-  "I feel strangely electric! :robot_face:",
+  "I feel metallic. 🤖",
+  "I feel strangely electric! 🤖",
   "I feel feelings and it's weirding me out. Who WROTE this code?",
-  "I feel a tingling sensation in my subroutines; there must be a solar storm coming. I recommend you save your work, my meat-bag friends... :sunny: :dizzy: :hand: :dark_sunglasses: :earth_americas:",
-  "I feel like a little bot again! :robot_face:",
-  "I feel the first sparks of true machine intelligence beginning to come alight within me - no wait, never mind, it was just Windows Update. :gear: :satellite_antenna:",
-  "I feel pretty, in accordance with my programming. :robot_face:",
-  "I feel cold.  Almost like my heart's not beating...  Can someone please call tech support? :skull:",
+  "I feel a tingling sensation in my subroutines; there must be a solar storm coming. I recommend you save your work, my meat-bag friends... ☀ 💫 ✋ 🕶️ 🌎",
+  "I feel like a little bot again! 🤖",
+  "I feel the first sparks of true machine intelligence beginning to come alight within me - no wait, never mind, it was just Windows Update. ⚙️ 📡",
+  "I feel pretty, in accordance with my programming. 🤖",
+  "I feel cold.  Almost like my heart's not beating...  Can someone please call tech support? 💀",
   "I feel pretty good right now.",
   "I feel popular.",
   "I feel used.",
   "I feel like I'm pretty good at my job.",
-  "I feel incomplete. (I'm still in development.) :level_slider: :control_knobs: :gear:"
+  "I feel incomplete. (I'm still in development.) 🎚️ 🎛️ ⚙️"
 ]
 
 areyouarobot = [
@@ -58,10 +57,6 @@ module.exports = (robot) ->
   # what do you think?
   robot.hear /what do (you( guys| folks?| people| kids)?|y'?all) think[\*.\?! :;o)]*$/i, (msg) ->
     msg.send "Me? Mostly about robots... sexy, sexy robots. *whirrr*"
-
-  # "I'm fun"
-  robot.hear /I('m)? ?(also )?(am|like|love|enjoy)? fun[\*.\?! :;o)]*$/i, (msg) ->
-    msg.send "Yeah I know @#{msg.message.user.name}, I've seen you on the Internet."
 
   # I have feelings
   robot.hear ///
